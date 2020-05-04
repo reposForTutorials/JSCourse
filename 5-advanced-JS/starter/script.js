@@ -184,7 +184,7 @@ var john = {
         }
     }
 };
-john.presentation('formal','morning');
+//john.presentation('formal','morning');
 
 
 var emily={
@@ -192,4 +192,11 @@ var emily={
     age:35,
     job: 'designer'
 };
-john.presentation.call(emily,'formal','afternoon');
+//john.presentation.call(emily,'formal','afternoon');
+
+var johnFriendly = 
+john.presentation.bind(john,'friendly');
+
+johnFriendly('morning');
+ 
+  
